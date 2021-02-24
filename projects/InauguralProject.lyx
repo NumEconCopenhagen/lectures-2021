@@ -96,7 +96,7 @@ Project 0: Inaugural Project
 \end_layout
 
 \begin_layout Author
-Jeppe Druedahl
+Christian Langholz Carstensen
 \end_layout
 
 \begin_layout Standard
@@ -118,8 +118,8 @@ thispagestyle{empty}
 \series bold
 Vision: 
 \series default
-The inaugural project teaches you to solve a simple economic model, and
- present the results.
+The inaugural project teaches you to solve a simple economic model and present
+ the results.
 \end_layout
 
 \begin_layout Itemize
@@ -174,7 +174,7 @@ Example of structure:
 \begin_inset CommandInset href
 LatexCommand href
 name "See this repository"
-target "https://github.com/NumEconCopenhagen/example-2020"
+target "https://github.com/NumEconCopenhagen/example-2021"
 literal "false"
 
 \end_inset
@@ -215,20 +215,30 @@ On GitHub by uploading it to the folder:
 
 \begin_deeper
 \begin_layout Quote
-github.com/projects-2020-YOURGROUPNAME/inauguralproject/
+github.com/projects-2021-YOURGROUPNAME/inauguralproject/
 \end_layout
 
 \begin_layout Enumerate
 Add your group to this 
 \begin_inset CommandInset href
 LatexCommand href
-name "list"
-target "https://docs.google.com/spreadsheets/d/1HlOaNIR5wZOGxnvIxrYSrfdSKNHDu7LiwFvlSwX1Zbw/edit#gid=0"
+name "list on MS Teams"
+target "https://teams.microsoft.com/l/file/A750F728-4C5B-489D-BA3F-A0666D754E09?tenantId=a3927f91-cda1-4696-af89-8c9f1ceffa91&fileType=xlsx&objectUrl=https%3A%2F%2Falumni.sharepoint.com%2Fsites%2FUCPH_Lectures-IntroductiontoProgramming%2FShared%20Documents%2FGeneral%2FGroups.xlsx&baseUrl=https%3A%2F%2Falumni.sharepoint.com%2Fsites%2FUCPH_Lectures-IntroductiontoProgramming&serviceName=teams&threadId=19:b4aab240b31e46c998650759a6d28a01@thread.tacv2&groupId=75ae09c9-a858-4999-8067-fc266dc5bd8f"
 literal "false"
 
 \end_inset
 
+.
+ Can also be found in the UCPH_Lectures..
+ team under General 
+\begin_inset Formula $\rightarrow$
+\end_inset
 
+ Files 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ Groups.xlsx
 \end_layout
 
 \begin_layout Enumerate
@@ -236,7 +246,7 @@ Create your GitHub repository
 \begin_inset CommandInset href
 LatexCommand href
 name "here"
-target "https://classroom.github.com/g/bEQjpmXc"
+target "https://classroom.github.com/g/AntGyHF2"
 literal "false"
 
 \end_inset
@@ -263,7 +273,7 @@ literal "false"
 \series bold
 Deadline:
 \series default
- 16th of March 23.59
+ 19th of March 23.59
 \end_layout
 
 \begin_layout Itemize
@@ -278,14 +288,32 @@ Your inaugural project will be a part of your exam portfolio.
 You can incorporate feedback before handing in the final version.
 \end_layout
 
+\begin_layout Section*
+
+\color red
+Project 0 will be updated soon!
+\end_layout
+
+\begin_layout Subsubsection*
+
+\series bold
+\size larger
+\color red
+The greyed out page below is the assignment from 2020.
+\end_layout
+
 \begin_layout Standard
+\begin_inset Note Greyedout
+status open
+
+\begin_layout Plain Layout
 \begin_inset Newpage newpage
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -305,7 +333,7 @@ newgeometry{left=3cm,right=3cm,top=2.5cm,bottom=2.5cm}
 Labor Supply Problem
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Consider a consumer solving the following maximization problem
 \begin_inset Formula 
 \begin{eqnarray}
@@ -361,7 +389,7 @@ where
  is the Frisch elasticity of labor supply.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Note that utility is monotonically increasing in consumption.
  This implies that
 \begin_inset Formula 
@@ -393,7 +421,7 @@ Construct a function which solves eq.
  (1) given the parameters.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 We choose the following parameter values
 \begin_inset Formula 
 \[
@@ -439,7 +467,7 @@ Plot
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Consider a population with 
 \begin_inset Formula $N=10,000$
 \end_inset
@@ -451,7 +479,7 @@ Consider a population with
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Assume the distribution of wages is uniform such that
 \begin_inset Formula 
 \[
@@ -515,7 +543,7 @@ What would the tax revenue be if instead
 ?
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Consider a politician who wishes to maximize the tax revenue.
 \end_layout
 
@@ -549,7 +577,7 @@ Which
 Report the tax revenue you expect to obtain.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset ERT
 status open
 
@@ -558,6 +586,11 @@ status open
 
 \backslash
 restoregeometry
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
