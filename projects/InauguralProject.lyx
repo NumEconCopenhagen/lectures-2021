@@ -277,7 +277,7 @@ literal "false"
 \series bold
 Deadline:
 \series default
- 19th of March 23.59
+ 21th of March 23.59
 \end_layout
 
 \begin_layout Itemize
@@ -507,7 +507,7 @@ status open
 \begin_inset Formula $m$
 \end_inset
 
- in the range 0.4 to 2.5.
+ in the range 0.4 to 1.5.
 \end_layout
 
 \begin_layout Standard
