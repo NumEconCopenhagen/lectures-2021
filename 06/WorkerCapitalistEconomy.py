@@ -37,7 +37,6 @@ class WorkerCapitalistEconomyClass():
         
         p = self.p
         w = self.w
-        par = self.par
 
         # a. solve
         obj = lambda l: -self.utility_w((w*l)/p,l) # substitute in the budget constraint
