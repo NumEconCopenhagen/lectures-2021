@@ -123,6 +123,8 @@ Programming is more than writing code.
  it, and present the results.
  The bullets below are minimum requirements, but otherwise it is very much
  up to you, what you will like to do with your project.
+ Remember to write your code in a manner that is apt for others to run and
+ read when providing feedback.
  I hope to see some creative ideas!
 \end_layout
 
@@ -232,6 +234,15 @@ A single self-contained notebook (.ipynb) presenting the analysis.
 
 \begin_layout Enumerate
 (Optionally) Fully documented Python module files (.py).
+\end_layout
+
+\begin_layout Enumerate
+Data.
+ If you do not access data through an API call in your Python scripts, then
+ you must store it in a .csv file that is uploaded to your repository along
+ code files.
+ Note that Github won't allow you to upload very large data sets (ie.
+ multiple GBs).
 \end_layout
 
 \end_deeper
