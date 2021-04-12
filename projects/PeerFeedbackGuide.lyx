@@ -64,7 +64,7 @@
 \color #008000
 \end_index
 \leftmargin 2.7cm
-\topmargin 1cm
+\topmargin 3cm
 \rightmargin 2cm
 \bottommargin 2.7cm
 \secnumdepth 3
@@ -95,7 +95,7 @@ Peer Feedback
 \end_layout
 
 \begin_layout Author
-Jeppe Druedahl
+Christian Carstensen
 \end_layout
 
 \begin_layout Standard
@@ -123,8 +123,22 @@ The projects you hand-in should be understandable to your fellow students,
  and you should be able to understand other students' projects.
  You are therefore required to provide peer feedback on the projects of
  two other groups.
- You must provide the feedback directly on GitHub.
- The feedback should focus on:
+ 
+\series bold
+Realize that 
+\series default
+the real benefit of this exercise is not that you get some feedback from
+ others.
+ The real benefit is that you learn a lot from investigating how others
+ have attacked a task similar to yours.
+\begin_inset Newline newline
+\end_inset
+
+You must provide the feedback directly on GitHub using the Issues function.
+\end_layout
+
+\begin_layout Standard
+The feedback should focus on:
 \end_layout
 
 \begin_layout Enumerate
@@ -150,16 +164,29 @@ Specific guidelines:
 \end_layout
 
 \begin_layout Enumerate
-Find the 2 groups for whom you need to provide peer feedback 
-\begin_inset CommandInset href
-LatexCommand href
-name "here"
-target "https://docs.google.com/spreadsheets/d/1HRfqldr1FPBfmUGQZ1KpWCauY38ZXzHDetdUtI3GYVk/edit#gid=0"
-literal "false"
-
-\end_inset
-
+Find the 2 groups for whom you need to provide peer feedback.
+ You can look at the file 
+\family typewriter
+Data project - peer assignment.xlsx
+\family default
+ in the Files tab of our UCPH_Lectures - Introduction to Programming team
+ for the Data project.
+ 
+\family typewriter
+Model project - peer assignment.xlsx
+\family default
 .
+ will contain the corresponding assignment for the model project.
+ These files are produced by 
+\family typewriter
+PeerFeedbackAssignments.ipynb
+\family default
+, which is located in projects folder of Lectures2021.
+ Each team who has committed something to the relevant project folder, the
+ first column, has a peer_group_1 and peer_group_2 to whom they must give
+ feedback.
+ The assignment of peers to teams is randomized, and you will get independent
+ draws for the data project and the model project.
 \end_layout
 
 \begin_layout Enumerate
@@ -175,7 +202,7 @@ status open
 
 
 \backslash
-url{https://github.com/NumEconCopenhagen/projects-2020-GROUPNAME}
+url{https://github.com/NumEconCopenhagen/projects-2021-GROUPNAME}
 \end_layout
 
 \end_inset
@@ -223,7 +250,14 @@ Issues
 \begin_inset Quotes erd
 \end_inset
 
- tab).
+ tab), where you provide feedback.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -278,11 +312,11 @@ Deadlines:
 \end_layout
 
 \begin_layout Enumerate
-Data project: 19th of April 23:59.
+Data project: 18th of April 23:59.
 \end_layout
 
 \begin_layout Enumerate
-Model project: 11th of May 23:59.
+Model project: 21th of May 23:59.
 \end_layout
 
 \end_body
