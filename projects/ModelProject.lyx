@@ -95,7 +95,7 @@ Project 2: Model Analysis Project
 \end_layout
 
 \begin_layout Author
-Jeppe Druedahl
+Christian Langholz Carstensen
 \end_layout
 
 \begin_layout Standard
@@ -137,19 +137,19 @@ Objectives:
 \begin_deeper
 \begin_layout Enumerate
 Apply model analysis methods (e.g.
- scipy.optimize, scipy.linalg, sympy)
+ scipy.optimize, scipy.linalg, sympy).
 \end_layout
 
 \begin_layout Enumerate
-Structure a code project
+Structure a code project (see lecture 05).
 \end_layout
 
 \begin_layout Enumerate
-Document code
+Document code.
 \end_layout
 
 \begin_layout Enumerate
-Present results in text form and in figures
+Present results in text form and in figures (put text in Markdown cells).
 \end_layout
 
 \end_deeper
@@ -167,20 +167,21 @@ Describe an algorithm on how to solve a simple economic model
 \begin_inset Newline newline
 \end_inset
 
-(most likely taken from a textbook)
+(most likely taken from a textbook).
+ See examples of algorithm descriptions in L09 L10.
 \end_layout
 
 \begin_layout Enumerate
-Solve (and perhaps simulate) a simple economic model
+Solve (and perhaps simulate) a simple economic model.
 \end_layout
 
 \begin_layout Enumerate
-Visualize results across e.g.
- parametrizations
+Visualize how the solution changes across parametrizations.
+ This is an important task (that also works as a debugging device).
 \end_layout
 
 \begin_layout Enumerate
-Analyze one or more extensions of the baseline model
+Analyze one or more extensions of the baseline model.
 \end_layout
 
 \end_deeper
@@ -225,7 +226,7 @@ Example of structure:
 \begin_inset CommandInset href
 LatexCommand href
 name "See this repository"
-target "https://github.com/NumEconCopenhagen/example-2020"
+target "https://github.com/NumEconCopenhagen/example-2021"
 literal "false"
 
 \end_inset
@@ -243,6 +244,8 @@ Size:
 Quality before quantity
 \emph default
 .
+ It is better to have a rather simple but well-tested model with nice vizualizat
+ion and simulation compared to a larger model that does not succeed entirely.
 \end_layout
 
 \begin_layout Itemize
@@ -255,7 +258,7 @@ On GitHub by uploading it to the folder:
 
 \begin_deeper
 \begin_layout Quote
-github.com/projects-2020-YOURGROUPNAME/modelproject/
+github.com/projects-2021-YOURGROUPNAME/modelproject/
 \end_layout
 
 \end_deeper
@@ -264,7 +267,7 @@ github.com/projects-2020-YOURGROUPNAME/modelproject/
 \series bold
 Deadline:
 \series default
- 7th of May 23.59
+ 14th of May 23.59
 \end_layout
 
 \begin_layout Itemize
@@ -286,6 +289,22 @@ Your model analysis project will be a part of your exam portfolio.
 \end_inset
 
 You can incorporate feedback before handing in the final version.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+General advice:
+\series default
+ In the beginning of the project, write your code in the way 
+\begin_inset Formula $you$
+\end_inset
+
+ find most intuitive.
+ Also if that is a slow implementation that does not use optimized routines
+ and such.
+ You can then begin to optimize it when things seem to work the way you
+ intend.
 \end_layout
 
 \end_body
