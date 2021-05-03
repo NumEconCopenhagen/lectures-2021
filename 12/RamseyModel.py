@@ -94,11 +94,12 @@ class RamseyModelClass():
         # c. production and factor prices
         path.Y,path.rk,path.w = production(par,path.A,K_lag)
         path.r = path.rk-par.delta
+        r_plus = np.append(path.r[1:],ss.r)
 
-        # d. errors (also called H)        
+        # d. errors (also called H)
         errors = np.nan*np.ones((2,par.Tpath))
-        errors[0,:] = C**(-par.sigma) - (1+path.r)*par.beta*C_plus**(-par.sigma)
-        errors[1,:] = K - ((1-par.delta)*K_lag + path.Y - C)
+        errors[0,:] = C**(-par.sigma) - (1+r_plus)*par.beta*C_plus**(-par.sigma)
+        errors[1,:] = K - ((1-par.delta)*K_lag + (path.Y - C))
         
         return errors.ravel()
         

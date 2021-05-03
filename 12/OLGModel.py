@@ -134,7 +134,7 @@ def target_s(s,par,sim,t):
 
     # c. Euler equation
     LHS = sim.C1[t]**(-par.sigma)
-    RHS = (1+sim.rt[t])*par.beta * sim.C2[t+1]**(-par.sigma)
+    RHS = (1+sim.rt[t+1])*par.beta * sim.C2[t+1]**(-par.sigma)
 
     return LHS-RHS
 
