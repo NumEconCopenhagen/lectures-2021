@@ -30,7 +30,11 @@ class RamseyModelClass():
         par.theta = 0.05 # substitution parameter        
         par.delta = 0.05 # depreciation rate
 
+        # c. initial
+        par.K_lag_ini = 1.0
+
         # c. misc
+        par.solver = 'broyden' # solver for the equation syste, 'broyden' or 'scipy'
         par.Tpath = 500 # length of transition path, "truncation horizon"
 
     def allocate(self):
@@ -98,7 +102,7 @@ class RamseyModelClass():
 
         # d. errors (also called H)
         errors = np.nan*np.ones((2,par.Tpath))
-        errors[0,:] = C**(-par.sigma) - (1+r_plus)*par.beta*C_plus**(-par.sigma)
+        errors[0,:] = C**(-par.sigma) - par.beta*(1+r_plus)*C_plus**(-par.sigma)
         errors[1,:] = K - ((1-par.delta)*K_lag + (path.Y - C))
         
         return errors.ravel()
@@ -165,7 +169,13 @@ class RamseyModelClass():
         x0 = x0.ravel()
 
         # c. call solver
-        x = broyden_solver(eq_sys,x0,self.jac,do_print=True)
+        if par.solver == 'broyden':
+            x = broyden_solver(eq_sys,x0,self.jac,do_print=True)
+        elif par.solver == 'scipy':
+            root = optimize.root(eq_sys,x0,method='hybr',options={'factor':1})
+            x = root.x
+        else:
+            raise Exception('unknown solver')
 
         # d. final evaluation
         eq_sys(x)
