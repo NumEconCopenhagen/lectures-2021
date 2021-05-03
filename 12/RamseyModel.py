@@ -171,11 +171,20 @@ class RamseyModelClass():
         # c. call solver
         if par.solver == 'broyden':
             x = broyden_solver(eq_sys,x0,self.jac,do_print=True)
+        
         elif par.solver == 'scipy':
-            root = optimize.root(eq_sys,x0,method='hybr',options={'factor':1})
+            
+            root = optimize.root(eq_sys,x0,method='hybr',options={'factor':1.0})
+            # the factor determines the size of the initial step
+            #  too low: slow
+            #  too high: prone to errors
+             
             x = root.x
+
         else:
+
             raise Exception('unknown solver')
+            
 
         # d. final evaluation
         eq_sys(x)
