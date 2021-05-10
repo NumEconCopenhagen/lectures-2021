@@ -19,7 +19,7 @@ class Simulation:
         # a. Baseline parameters
         self.n_dim = 10 
         self.check_prints = False
-        self.cutoff = 0.5
+        self.cutoff = 0.7
         self.T = 5
         self.t = 0
         self.share_pop = 0.8
@@ -110,9 +110,8 @@ class Simulation:
         # d. Create figure path and record initial state of simulation 
         cwd = os.getcwd()
         self.fig_dir = os.path.join(cwd, 'figs')
-        #if not os.path.exists(self.fig_dir):
-            #os.mkdir(self.fig_dir)
-        shutil.rmtree(self.fig_dir)
+        if os.path.exists(self.fig_dir):
+            shutil.rmtree(self.fig_dir)
         os.mkdir(self.fig_dir)
         self.plot_state(save_plot=True, suppress_plot=True)
         
