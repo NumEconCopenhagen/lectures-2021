@@ -32,7 +32,7 @@ class ConsumptionSavingModel:
         
         # c. expected v2 value
         prob_low = 0.5
-        prob_high = 0.05
+        prob_high = 0.5
         expected_v2 = prob_low*v2_low + prob_high*v2_high
         
         # d. total value
